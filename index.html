@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recipe Finder</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>🍴 Recipe Finder</h1>
+            <p>Enter ingredients you have and discover delicious recipes!</p>
+        </header>
+        <main>
+            <div class="input-container">
+                <input type="text" id="ingredients-input" placeholder="e.g., eggs, milk, flour">
+                <button id="search-btn"><i class="fas fa-search"></i> Search</button>
+            </div>
+            <div id="recipes-container"></div>
+        </main>
+    </div>
+    <!-- Search Section -->
+<div>
+    <input type="text" id="ingredients-input" placeholder="Enter ingredients (comma separated)">
+    <button id="search-btn">Search Recipes</button>
+</div>
+
+<!-- Show Favorites Button -->
+<button id="show-favorites-btn">Show Favorites</button>
+
+<!-- Recipes Display Section -->
+<div id="recipes-container"></div>
+
+<!-- Favorites Display Section -->
+<div id="favorites-container"></div>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
